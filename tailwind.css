@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.nav-container {
+    @apply flex fixed bg-black w-full px-3 py-4;
+}
+
+.nav-items {
+    @apply container flex items-center mx-auto;
+}
+
+.item-bars {
+    @apply flex justify-end flex-1 text-white  text-3xl
+}
+
+
+
+
+
+
+
+
+
+@screen md { 
+    .nav-container {
+        @apply px-20;
+    }
+
+    .item-bars {
+        @apply hidden;
+    }
+}
